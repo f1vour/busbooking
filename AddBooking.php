@@ -166,61 +166,6 @@ button
     <h1 class="adminTopic">Get Your Ticket...</h1>
 
 
-
-<?php
-
-    /*
-    $sqlget="SELECT * FROM bus";
-    $sqldata=mysqli_query($conn,$sqlget) or die('error getting');
-    
-
-    echo "<table>";
-    echo "<tr>
-      <th>ID</th>
-    <th>Bus Name</th>
-    <th>Tel</th>
-    <th>Book Now</th>
-    
-   
-       </tr>";
-
-       while ($row=mysqli_fetch_array($sqldata,MYSQLI_ASSOC))
-       {
-        echo "<tr><td>";
-        echo $row['id'];
-        echo "</td><td>";
-        echo $row['Bus_Name'];
-        echo "</td><td>";
-        echo $row['Tel'];
-        echo "</td>";
-       
-          
-        ?>
-
-        <td>
-
-        <button style="border:2px solid yellow; border-radius:7px; background-color:red;color:white;">
-          <a href="Viewbooking.php">
-         
-          
-          
-
-          Book Now
-
-          </a>
-
-        </button>
-
-        </td></tr>
-
-<?php
-       }
-
-       echo "</table>";
-
-*/
-?>
-
 <?php
 
 
