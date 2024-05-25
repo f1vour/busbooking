@@ -27,7 +27,7 @@
 
 /* Form-left styling */
 .Form-left h1{
-  color: #fff;
+  color: #00878E;
   padding: 0;
   margin: 0;
 }
@@ -35,22 +35,22 @@
 .Form-left h4{
   padding: 0;
   margin: 0;
-  color: rgb(243, 235, 235);
+  color: #00878E;
 }
 .line{
-  border-bottom: 2px solid rgb(12, 168, 207);
+  border-bottom: 2px solid #11caf3;
   width: 8%;
   margin-left: 0;
 }
-.Form-left span{
-    color: white;
+.Form-left span, p{
+    color: #000;
     font-weight: bold;
 }
 
 .Form-left hr{
   width: 25rem;
   margin-left: 0;
-  border: 1px solid rgb(243, 240, 240);
+  border: 1px solid #11caf3;
 }
 
 /* socail media icons */
@@ -71,7 +71,7 @@
 
 /* Form Right Styling */
 .Form-right h1{
-  color: #fff;
+  color: #00878E;
   padding: 0;
   margin: 0;
 }
@@ -83,46 +83,47 @@ form{
 form h5{
   padding: 0;
   margin: 0;
-  color: rgb(255, 247, 247);
+  color: #000;
 }
 form input{
   padding:0.6rem;
   width: 27rem;
-  border: none;
-  /*background-color:rgba(136, 133, 133, 0.6);*/
-  color:white;
-  border: none;
-  outline:none;
-  background-color: rgba(0, 0, 0, 1,1);
+  background-color:#fff;
+  color:#000;
+  border: 2px solid #11caf3;
+  border-radius: 5px;
+  outline: #00878E;
 }
 
 form textarea{
   padding:0.6rem;
   width: 27rem;
-  border: none;
-  background-color:rgba(136, 133, 133, 0.6);
-  color:white;
-  border: none;
+  background-color:#fff;
+  color:#000;
+  border: 2px solid #11caf3;
+  border-radius: 5px;
   outline:none;
  }
 
  form button{
-    width: 9rem;
+    width: 100%;
     background-color: #11caf3;
-    padding: 5px;
+    padding: 10px;
     outline: none;
     border-color: transparent;
     color: #fff;
-    font-size: 15px;
+    font-size: 10px;
     font-weight: bold;
     letter-spacing: 2px;
     text-align: center;
-    margin-top: 0.9rem;
-   /* border-radius: 50px;*/
+    margin-right: 5px;
+    /* margin-left: 10px;  */
+   border-radius: 5px;
     cursor: pointer;
  }
  form button:hover{
-  background-color: rgb(255, 196, 107);
+  background-color: #00878E;
+  color: #000;
  }
 
 

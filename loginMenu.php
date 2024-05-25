@@ -51,7 +51,7 @@
    	     	font-size: 38px;
    	     }
    	     body{
-			background-color: #ddeff3;
+			background-color: #fff;
    	     	/* background-image: url(image/8.jpg);
    	     	background-repeat: no-repeat;
    	     	background-size: cover;
@@ -79,15 +79,6 @@
    <link rel="stylesheet" href="cssfile/nav.css">
     <link rel="stylesheet" href="cssfile/footer.css">
  
- <!--
-    <link href="http://fonts.googleapis.com/css?family=Cookie" rel="stylesheet" type="text/css">
-  
-    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
--->
 
 
 </head>

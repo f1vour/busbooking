@@ -12,6 +12,7 @@ nav {
   border: 1px solid #0e0d0d;
   border-left: none;
   border-right: none;
+  color: #fff;
 }
 nav ul {
   display: flex;
@@ -24,7 +25,7 @@ nav ul li.logo {
   flex: 1;
   font-size: 30px;
   font-weight: 700;
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', 'Montserrat', sans-serif;
 }
 nav ul div.items {
   padding: 0 25px;
@@ -59,9 +60,22 @@ nav ul li.btn span {
   font-size: 50px;
   text-decoration: solid #11f3e4;
 }
-nav ul li.btn span.show:before {
-  content: "\f00d";
+.btnBtn {
+  background-color:#11CAF3;
+  color: #fff;
+  border: 2px solid #11CAF3;
+  padding: 20px;
+  margin: 15px;
+  border-radius: 5px;
 }
+.btnBtn:hover {
+  color: #000;
+  background-color: #15afd2;
+  border-color: #15afd2;
+}
+/* nav ul li.btn span.show:before {
+  content: "\f00d";
+} */
 @media screen and (max-width: 1052px) {
   nav {
     padding: 10px 40px 10px 0px;

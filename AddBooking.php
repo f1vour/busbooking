@@ -9,21 +9,6 @@ session_start();
 ?>
 
 <?php include("connection.php")?>
-<!--
-<!DOCTYPE html>
-<html>
-<head>
-  <title>admin Panel suraksha</title>
-</head>
-<body>
-
-   <?php// echo "welcome:".  $_SESSION['id']; ?>
-   <a href="adminLogout.php"><button class="btnHome">logout</button></a>
-
-</body>
-</html>
-
--->
 
 
 <!DOCTYPE html>
@@ -34,21 +19,23 @@ session_start();
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="cssfile/sidebar.css">
 <link rel="stylesheet" href="cssfile/signUp.css">
+<link rel="stylesheet" href="cssfile/nav.css">
   <style type="text/css">
 
       body{
-
-      background-image: url("image/2.jpg");
+       
+        background-color: #ddeff3;
+      /* background-image: url("image/2.jpg");
       background-position: center;
       background-size: cover;
       height: 700px;
       background-repeat: no-repeat;
-      background-attachment: fixed;
+      background-attachment: fixed; */
 
     }
     .adminTopic{
       text-align: center;
-      color: #fff;
+      color: #000;
       
 
     }
@@ -67,17 +54,17 @@ table
 }
 table th
 {
-    border-bottom:2px solid rgb(187, 187, 187);
+    border-bottom:2px solid #11caf3;
     padding:10px 0px 10px 0px;
     font-family: "balsamiq_sansitalic" !important;
 }
 table tr td
 {
-    border-right: 2px solid rgb(187, 187, 187);
+    border-right: 2px solid #11caf3;
     height: 58px;
     padding: 22px 0px 0px 0px;
     font-family: "monospace;" !important;
-    border-bottom: 2px solid rgb(187, 187, 187);
+    border-bottom: 2px solid #11caf3;
     font-size: 20px;
 }
 table tr td a
@@ -103,7 +90,7 @@ table tr td button:hover
     transition:background-color 0.2s;*/
 
     padding: 5px 5px 5px 5px;
-  border: 2px solid #11caf3;
+    border: 2px solid #11caf3;
     border-radius: 7px;
     background-color: #00878e;
     color: white;
@@ -111,7 +98,7 @@ table tr td button:hover
 }
 button 
 {
-    padding: 5px 5px 5px 5x;
+    padding: 10px;
 }
 .btnPolicy{
 
@@ -145,6 +132,10 @@ button
   </style>
 </head>
 <body>
+<?php include("nav.php");
+
+?>
+
   <input type="checkbox" id="check">
 
   <label for="check">
@@ -154,7 +145,7 @@ button
 
   </label>
   <div class="sidebar">
-<header><img src="image/Re.png">
+<header><img src="image/P2.png">
 <p><?php echo $user_data['username'];?></p>
 </header>
 <ul>
@@ -164,22 +155,6 @@ button
     <li><a href="viewBus.php">Ticket Booking</a></li>
     <li><a href="profile.php">Profile</a></li>
     <li><a href="logout.php">logout</a></li>
-    
-  <!--  <li><a href="#">Event</a></li>
-    <li><a href="#">About</a></li>
-    <li><a href="#">Service</a></li>
-    <li><a href="#">Contact</a></li>-->
-    </ul>
- <!--  <li>
-      <div class="social-links">
-        <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
-        <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
-        <a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
-        <a href="#" class="google-plus"><i class="fa fa-youtube"></i></a>
-        
-      </div>
-    </li>-->
-   
 
 </div>
 
@@ -282,7 +257,7 @@ button
               $stmt->execute();
               
                          echo ("<script LANGUAGE='JavaScript'>
-                window.alert('Succesfully added!!!');
+                window.alert('Successfully added!!!');
                 window.location.href='AddPay.php';
                 </script>");
               
@@ -306,7 +281,7 @@ button
           <div class="wrapper">
   <div class="registration_form">
     <div class="title">
-    Geting A Ticket...
+    Getting A Ticket...
     </div>
 
     <form action="#" method="POST">
@@ -344,7 +319,7 @@ button
 
         </div>
 
-
+<!-- TODO: add the code here for downloading the tickets. -->
 
       </div>
     </form>

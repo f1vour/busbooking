@@ -3,14 +3,16 @@
 
     width: 320px;
     height: 420px;
-    background: rgba(0, 0, 0, 0.5);
-    color: #fff;
+    background: #fff;
+    color: #000;
     top: 60%;
     left: 50%;
     position: absolute;
     transform: translate(-50%,-50%);
     box-sizing: border-box;
     padding: 70px 30px;
+    border-radius: 20px;
+    border: 5px solid #11CAF3;
     
 }
 .avatar{
@@ -26,11 +28,13 @@ h1{
     padding: 0 0 20px;
     text-align: center;
     font-size: 22px;
+    color: #000;
 }
 .login-box p{
     margin: 0;
     padding: 0;
     font-weight: bold;
+    color: #000;
 }
 .login-box input{
     width: 100%;
@@ -39,11 +43,11 @@ h1{
 .login-box input[type="text"], input[type="password"]
 {
     border: none;
-    border-bottom: 1px solid #fff;
+    border-bottom: 1px solid #11CAF3;
     background: transparent;
     outline: none;
     height: 40px;
-    color: #fff;
+    color: #000;
     font-size: 16px;
 }
 .login-box input[type="submit"]
@@ -52,14 +56,14 @@ h1{
     outline: none;
     height: 40px;
     background: #11CAF3;
-    color: #fff;
+    color: #000;
     font-size: 18px;
    /* border-radius: 20px;*/
 }
 .login-box input[type="submit"]:hover
 {
     cursor: pointer;
-    background: #11CAF3;
+    background: #00878E;
     color: #000;
 }
 
@@ -70,7 +74,8 @@ h1{
 }
 .login-box a:hover
 {
-    color: #11CAF3;
+    color: none;
+    
 }
 
 

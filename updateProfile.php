@@ -61,12 +61,12 @@ body{
   outline: none;
   color: black;
 }
-      
-    </style>
-
-  </head>
+</style>
+</head>
   <body>
-
+  <?php include("nav.php");
+  
+  ?>
   <?php 
 
 

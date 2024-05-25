@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HELP PAGE</title>
     <link rel="stylesheet" href="cssfile/help.css"/>
-
     <link rel="stylesheet" href="cssfile/nav.css">
+    <!-- <link rel="stylesheet" href="cssfile/footer.css"> -->
     <link rel="stylesheet" href="cssfile/footer_l.css">
     <!--  <link rel="stylesheet" type="text/css" href="cssfile/container.css">-->
     <link rel="stylesheet" href="cssfile/login.css">
@@ -34,10 +34,13 @@
         background-attachment: fixed; */
        }
    </style>
+   <link rel="stylesheet" href="cssfile/nav.css">
+   <link rel="stylesheet" href="cssfile/footer.css">
   
 </head>
 <body>
 <?php include("nav.php");
+
 ?>
 
   

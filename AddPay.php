@@ -17,11 +17,13 @@ session_start();
     
     <!-- custom css file link  -->
     <link rel="stylesheet" href="cssfile/payment.css">
-
+    <link rel="stylesheet" href="cssfile/nav.css">
 </head>
 <body>
+    
+<?php include("nav.php");
 
-
+?>
 
 <?php
 
@@ -60,7 +62,7 @@ session_start();
               $stmt->execute();
                           
                            echo ("<script LANGUAGE='JavaScript'>
-                window.alert('Succesfully added!!!');
+                window.alert('Successfully added!!!');
                 window.location.href='paySucess.php';
                 </script>");
 
@@ -88,35 +90,34 @@ session_start();
 
                  <div class="inputBox">
                     <span>Amount You Pay :</span>
-                    <input type="number" value="500.00" name="amount">
+                    <input type="number" value="500" name="amount" readonly>
                 </div>
 
                 <div class="inputBox">
                     <span>Name :</span>
-                    <input type="text" value="<?php echo $user_data['username'];?>" name="name">
+                    <input type="text" value="<?php echo $user_data['username'];?>" name="name" readonly>
                 </div>
 
                 <div class="inputBox">
                     <span>Email :</span>
-                    <input type="email" value="<?php echo $user_data['email'];?>" name="email">
+                    <input type="email" value="<?php echo $user_data['email'];?>" name="email" readonly>
                 </div>
                 <div class="inputBox">
                     <span>Address :</span>
-                    <input type="text" name="address">
+                    <input type="text" value="<?php echo $user_data['address'];?>" name="address" readonly>         
                 </div>
                 <div class="inputBox">
                     <span>City :</span>
-                    <input type="text" placeholder="Lugbe" name="city">
+                    <input type="text" placeholder="Lugbe" value="<?php echo $user_data['city'];?>" name="city" readonly>
                 </div>
-
                 <div class="flex">
                     <div class="inputBox">
                         <span>State :</span>
-                        <input type="text" placeholder="Abuja" name="state">
+                        <input type="text" placeholder="Abuja" value="<?php echo $user_data['state'];?>" name="state" required>
                     </div>
                     <div class="inputBox">
                         <span>Zip code :</span>
-                        <input type="text" placeholder="123 456" name="zip">
+                        <input type="text" placeholder="123 456" value="<?php echo $user_data['zip_code'];?>" name="zip" required>
                     </div>
                 </div>
 
@@ -163,6 +164,6 @@ session_start();
     </form>
 
 </div>    
-    
+    <!-- TODO: Add this also for printing of the data collected -->
 </body>
 </html>

@@ -3,10 +3,15 @@
 <head>
 	<title>Responive Carousel Slider</title>
 	<link rel="stylesheet" type="text/css" href="cssfile/slide.css">
+	<link rel="stylesheet" href="cssfile/nav.css">
+	<link rel="stylesheet" href="cssfile/footer.css">
 	<link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto+Slab:wght@300&display=swap" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/flickity/2.2.1/flickity.css">
 </head>
 <body>
+<?php include("nav.php");
+
+?>
 
 <div class="hero-slider" data-carousel>
 	<div class="carousel-cell" style="background-image: url(image/11.jpg);">
@@ -39,5 +44,10 @@
 
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/flickity/2.2.1/flickity.pkgd.min.js"></script>
 <script type="text/javascript" src="js/script.js"></script>
+
+
+<!--this is the footer calling-->
+<?php include("footer.php");
+             ?>
 </body>
 </html>

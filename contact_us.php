@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title>COMFY TRAVELS SERVICES</title>
     <link rel="stylesheet" href="cssfile/nav.css">
+    <link rel="stylesheet" href="cssfile/footer.css">
     <link rel="stylesheet" href="cssfile/footer_l.css">
      <link rel="stylesheet" href="cssfile/contact_us.css">
   <!--  <link rel="stylesheet" type="text/css" href="cssfile/container.css">-->
@@ -26,11 +27,7 @@
        line-height: 1.5;
        box-sizing: border-box;
        color:rgba(248, 248, 248, 0.938);
-       /* background-color: #ddeff3; */
-       background-image: url(image/6.jpg);
-       background-size: cover;
-       background-repeat: no-repeat;
-       background-attachment: fixed;
+       background-color: #fff;
  
       }
       
@@ -48,9 +45,8 @@
 
             <?php include("nav.php");
              ?>
-
-
-            <section id="fancy-form">
+             
+             <section id="fancy-form">
    <div class="container">
     <div class="form-sections">
       <!-- Form left -->
@@ -73,13 +69,7 @@
         <h4>EMAIL</h4>
          <span>info@ComfyTravels.com</span>
          <hr> <br>
-
-         <!-- social media icons 
-          <a href="#" class="fa fa-facebook"></a>
-          <a href="#" class="fa fa-twitter"></a>
-          <a href="#" class="fa fa-google"></a>
-          <a href="#" class="fa fa-linkedin"></a>
-          <a href="#" class="fa fa-youtube"></a>-->
+         
       </div>
 
       <!-- form right -->
@@ -96,7 +86,7 @@
           <input type="number"><br><br>
           <h5>YOUR MESSAGE</h5>
           <textarea name="" id="" cols="50" rows="7"></textarea><br>
-          <button>Send</button>
+          <button>Send Message</button>
         </form>
       </div>
     </div>
@@ -104,7 +94,9 @@
   </section>
 
              
-
+   <!--this is the footer calling-->
+   <?php include("footer.php");
+             ?>
 
   </body>
 </html>

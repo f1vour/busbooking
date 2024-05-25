@@ -30,14 +30,15 @@
 
 
        body{
-                margin: 0;
+        background-color: #fff;
+                /* margin: 0;
                 padding: 0;
                 width: 100%;
                 height: 100%;
                 background-image: url(image/9.jpg);
                 background-repeat: no-repeat;
                 background-attachment: fixed;
-                background-size: cover;
+                background-size: cover; */
 
             }
             .sign_up{

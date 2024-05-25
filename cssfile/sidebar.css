@@ -11,6 +11,7 @@
 label #btn,
 label #cancle {
   position: absolute;
+  /* margin-top: 500px; */
   cursor: pointer;
   background: #042331;
   color: #fff;

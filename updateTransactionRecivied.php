@@ -4,21 +4,7 @@
 
 ?>
 <?php include("connection.php")?>
-<!--
-<!DOCTYPE html>
-<html>
-<head>
-	<title>admin Panel suraksha</title>
-</head>
-<body>
 
-   <?php// echo "welcome:".  $_SESSION['id']; ?>
-   <a href="adminLogout.php"><button class="btnHome">logout</button></a>
-
-</body>
-</html>
-
--->
 
 
 <!DOCTYPE html>
@@ -99,20 +85,6 @@
     <li><a href="BookingManage.php">Booking People</a></li>
     <li><a href="PaymentManage.php">Transaction</a></li>
     <li><a href="adminLogout.php">logout</a></li>
-  <!--  <li><a href="#">Event</a></li>
-    <li><a href="#">About</a></li>
-    <li><a href="#">Service</a></li>
-    <li><a href="#">Contact</a></li>-->
-    </ul>
- <!--  <li>
-      <div class="social-links">
-        <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
-        <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
-        <a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
-        <a href="#" class="google-plus"><i class="fa fa-youtube"></i></a>
-        
-      </div>
-    </li>-->
    
 
 </div>
@@ -155,12 +127,12 @@
                  
 */
               echo ("<script LANGUAGE='JavaScript'>
-    window.alert('Succesfully Transaction Updated!!!');
+    window.alert('Successfully Transaction Updated!!!');
     window.location.href='PaymentManage.php';
     </script>");
 
 
-        //   echo '<script type="text/javascript">alert("Booking uPdated sucessfully!!!")</script>';
+        //   echo '<script type="text/javascript">alert("Booking updated successfully!!!")</script>';
 
 
           }
