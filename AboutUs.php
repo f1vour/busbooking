@@ -5,6 +5,7 @@
     <meta charset="utf-8">
     <title>About Us</title>
     <link rel="stylesheet" href="cssfile/nav.css">
+    <link rel="stylesheet" href="cssfile/footer.css">
     <link rel="stylesheet" href="cssfile/footer_l.css">
     <!--  <link rel="stylesheet" type="text/css" href="cssfile/container.css">-->
     <link rel="stylesheet" href="cssfile/login.css">
@@ -29,11 +30,8 @@
                 padding: 0;
                 width: 100%;
                 height: 100%;
-                /* background-color: #ddeff3; */
-                background-image: url(image/5.jpg);
-                background-repeat: no-repeat;
-                background-attachment: fixed;
-                background-size: cover;
+                background-color: #fff;
+                
 
             }
             .sign_up{
@@ -65,7 +63,7 @@
     margin-top: 106px;
 }
 .about-img{
-    width: 250px;
+    width: 300px;
     height: 250px;
     margin: 0 3rem;
 }
@@ -77,7 +75,7 @@
     color: #fff;
     width: 400px;
     height: 250px;
-    border-left: 3px solid #00b894;
+    border-left: 3px solid #11caf3;
     padding-left: 2rem;
     margin: 0 3rem;
 }
@@ -97,7 +95,7 @@
     .about-intro{
         width: 100%;
         height: 100%;
-        border-top: 3px solid #00b894;
+        border-top: 3px solid #fff;
         border-left: none;
         padding: 1rem;
         margin-top: 2rem;
@@ -107,6 +105,7 @@
     }
     .about-intro p{
         font-size: 12px;
+        color: #fff;
     }
 
 
@@ -128,18 +127,19 @@ table
 }
 table th
 {
-    border-bottom:2px solid rgb(187, 187, 187);
+    border-bottom:2px solid #11caf3;
     padding:10px 0px 10px 0px;
     font-family: "balsamiq_sansitalic" !important;
     color: black;
 }
 table tr td
 {
-    border-right: 2px solid rgb(187, 187, 187);
+    border-right: 2px solid #11caf3;
+    border-left: 2px solid #11caf3;
     height: 58px;
     padding: 22px 0px 0px 0px;
     font-family: "monospace;" !important;
-    border-bottom: 2px solid rgb(187, 187, 187);
+    border-bottom: 2px solid #11caf3;
     font-size: 22px;
     color: black;
 }
@@ -156,25 +156,18 @@ table tr td a
 
 table tr td button:hover
 {
-
-    /*
-    background: rgb(255, 255, 255);
-    text-decoration:underline;
-    color:tomato;
-    padding: 4px;
-    border:2px solid tomato;
-    transition:background-color 0.2s;*/
-
     padding: 5px 5px 5px 5px;
-    border: 2px solid yellow;
+    border: 2px solid #11caf3;
     border-radius: 7px;
-    background-color: red;
+    background-color: #11caf3;
     color: white;
     cursor: pointer;
 }
 .topic_bus{
+    margin-top: 100px;
+    /* margin-bottom: 10px; */
     text-align: center;
-    color: #fff;
+    color: #000;
 }
 
 
@@ -189,7 +182,7 @@ table tr td button:hover
 
 
 
-              <!--this is the header callling(nav bar)-->
+              <!--this is the header calling(nav bar)-->
             <?php include("nav.php");
              ?>
 
@@ -198,7 +191,7 @@ table tr td button:hover
             <img src="image/16.jpg">
         </div>
         <div class="about-intro">
-            <h3>About Us<span style="color: #00b894;"> !</h3>
+            <h3>About Us<span style="color: #11caf3;"> !</h3>
             <p>We, Comfy Travels (Pvt) Ltd. who is pioneer of Online Bus Ticket Booking Service in Abuja Nigeria since 2024. In this segment the company has launch a web site www.ComfyTravels with the collaboration of BRT registered Buses in Abuja Nigeria.</p>
         </div>
     </div>
@@ -219,18 +212,13 @@ table tr td button:hover
 
     echo "<table>";
     echo "<tr>
-      <th>ID</th>
-    <th>bus_name</th>
-    <th>Tel Number</th>
-    
-   
-       </tr>";
+      <th>bus_name</th>
+      <th>Tel Number</th>
+      </tr>";
 
        while ($row=mysqli_fetch_array($sqldata,MYSQLI_ASSOC))
        {
         echo "<tr><td>";
-        echo $row['id'];
-        echo "</td><td>";
         echo $row['Bus_Name'];
         echo "</td><td>";
         echo $row['Tel'];
@@ -262,7 +250,6 @@ table tr td button:hover
 
     echo "<table>";
     echo "<tr>
-      <th>ID</th>
     <th>Via City</th>
     <th>Destination</th>
     <th>Bus Name</th>
@@ -276,8 +263,6 @@ table tr td button:hover
        while ($row=mysqli_fetch_array($sqldata,MYSQLI_ASSOC))
        {
         echo "<tr><td>";
-        echo $row['id'];
-        echo "</td><td>";
         echo $row['via_city'];
         echo "</td><td>";
         echo $row['destination'];
@@ -312,19 +297,17 @@ table tr td button:hover
             <img src="image/bus.jpg">
         </div>
         <div class="about-intro">
-           
-            <p>Plan your trip, reserve bus tickets, and arrive at your destination</p>
-            <p>We offer a complete online bus booking platform where you can buy BUS TICKETS. The traveler can purchase bus tickets online, and in exchange, a text message with travel details will be delivered to confirm the seat reservation.
-            </p>
-            <p>Plan your journey ahead of time, save time buying bus tickets, avoid lengthy lines, discover your boarding location quickly, and enjoy your joyous journey in comfort using Comfy travel's efficient bus reservation system
-            </p>
-
-
+            <h3>Our Strategy</h3>
+            <p>The application is quite simple and easy to use,
+                all that needs too be done is to browse the website and do your booking online.</p>
+            <p>We offer a complete online bus booking platform where you can buy BUS TICKETS. The traveler can purchase bus tickets online, and in exchange, download the tickets in their device.</p>
         </div>
     </div>
 
 
-
+     <!--this is the footer calling-->
+     <?php include("footer.php");
+             ?>
 
 
 

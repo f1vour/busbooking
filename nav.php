@@ -11,7 +11,7 @@
        <!--   <li><a href="#">Ticket Book</a></li>--> 
        <!-- <li><a href="#">Packages</a></li>-->
           <li><a href="loginMenu.php">Login</a></li>
-          <li><a href="signUp.php" class="">Sign Up </a></li>
+          <li><a href="signUp.php" class="btnBtn">Create account </a></li>
         </div>
       </ul>
     </nav><!--

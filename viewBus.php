@@ -9,21 +9,7 @@ session_start();
 ?>
 
 <?php include("connection.php")?>
-<!--
-<!DOCTYPE html>
-<html>
-<head>
-  <title>admin Panel suraksha</title>
-</head>
-<body>
 
-   <?php// echo "welcome:".  $_SESSION['id']; ?>
-   <a href="adminLogout.php"><button class="btnHome">logout</button></a>
-
-</body>
-</html>
-
--->
 
 
 <!DOCTYPE html>
@@ -36,47 +22,42 @@ session_start();
   <style type="text/css">
 
       body{
-
-      background-image: url("image/11.jpg");
-      background-position: center;
-      background-size: cover;
-      height: 700px;
-      background-repeat: no-repeat;
-      background-attachment: fixed;
-
+        background-color: #ddeff3;
+      
     }
     .adminTopic{
       text-align: center;
-      color: #fff;
+      color: #000;
       
 
     }
 
 table
 {
-    width:99%;
+    width:1000px;
     border-collapse: separate !important;
     margin:auto;
     /*/table-layout:fixed;/*/
     text-align:center;
-    margin-top:50px;
+    margin-top:90px;
+    margin-bottom: 200px;
     background-color: rgb(255, 255, 255);
     border-radius: 10px 10px 0px 0px;
 
 }
 table th
 {
-    border-bottom:2px solid rgb(187, 187, 187);
+    border-bottom:2px solid #11caf3;
     padding:10px 0px 10px 0px;
     font-family: "balsamiq_sansitalic" !important;
 }
 table tr td
 {
-    border-right: 2px solid rgb(187, 187, 187);
+    border-right: 2px solid #11caf3;
     height: 58px;
     padding: 22px 0px 0px 0px;
     font-family: "monospace;" !important;
-    border-bottom: 2px solid rgb(187, 187, 187);
+    border-bottom: 2px solid #11caf3;
     font-size: 20px;
 }
 table tr td a
@@ -92,17 +73,10 @@ table tr td a
 
 table tr td button:hover
 {
-
-  /*
-    background: rgb(255, 255, 255);
-    text-decoration:underline;
-    color:tomato;
-    padding: 4px;
-    border:2px solid tomato;
-    transition:background-color 0.2s;*/
+  
 
     padding: 5px 5px 5px 5px;
-  border: 2px solid #11caf3;
+    border: 2px solid #11caf3;
     border-radius: 7px;
     background-color: #11caf3;
     color: white;
@@ -110,7 +84,7 @@ table tr td button:hover
 }
 button 
 {
-    padding: 5px 5px 5px 5x;
+    padding: 10px;
 }
 .btnPolicy{
 
@@ -129,16 +103,15 @@ button
     cursor: pointer;
 
 }
+</style>
 
-
-  </style>
 </head>
 <body>
-  <input type="checkbox" id="check">
 
+  <input type="checkbox" id="check">
   <label for="check">
-<i class="fa fa-bars" id="btn"></i>
-<i class="fa fa-times" id="cancle"></i>
+    <i class="fa fa-bars" id="btn"></i>
+    <i class="fa fa-times" id="cancle"></i>
 
 
   </label>
@@ -152,24 +125,9 @@ button
     <li><a href="viewBus.php">Ticket Booking</a></li>
     <li><a href="profile.php">Profile</a></li>
     <li><a href="logout.php">logout</a></li>
-  <!--  <li><a href="#">Event</a></li>
-    <li><a href="#">About</a></li>
-    <li><a href="#">Service</a></li>
-    <li><a href="#">Contact</a></li>-->
-    </ul>
- <!--  <li>
-      <div class="social-links">
-        <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
-        <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
-        <a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
-        <a href="#" class="google-plus"><i class="fa fa-youtube"></i></a>
-        
-      </div>
-    </li>-->
    
 
 </div>
-
 
 
 <div class="sidebar2">
@@ -178,60 +136,6 @@ button
     <h1 class="adminTopic">Booking Your Ticket...</h1>
 
 
-
-<?php
-
-    /*
-    $sqlget="SELECT * FROM bus";
-    $sqldata=mysqli_query($conn,$sqlget) or die('error getting');
-    
-
-    echo "<table>";
-    echo "<tr>
-      <th>ID</th>
-    <th>Bus Name</th>
-    <th>Tel</th>
-    <th>Book Now</th>
-    
-   
-       </tr>";
-
-       while ($row=mysqli_fetch_array($sqldata,MYSQLI_ASSOC))
-       {
-        echo "<tr><td>";
-        echo $row['id'];
-        echo "</td><td>";
-        echo $row['Bus_Name'];
-        echo "</td><td>";
-        echo $row['Tel'];
-        echo "</td>";
-       
-          
-        ?>
-
-        <td>
-
-        <button style="border:2px solid yellow; border-radius:7px; background-color:red;color:white;">
-          <a href="Viewbooking.php">
-         
-          
-          
-
-          Book Now
-
-          </a>
-
-        </button>
-
-        </td></tr>
-
-<?php
-       }
-
-       echo "</table>";
-
-*/
-?>
 <?php
 
     
@@ -241,7 +145,7 @@ button
 
     echo "<table>";
     echo "<tr>
-    <th>ID</th>
+    
     <th>Via City</th>
     <th>Destination</th>
     <th>Bus Name</th>
@@ -256,8 +160,6 @@ button
        while ($row=mysqli_fetch_array($sqldata,MYSQLI_ASSOC))
        {
         echo "<tr><td>";
-        echo $row['id'];
-        echo "</td><td>";
         echo $row['via_city'];
         echo "</td><td>";
         echo $row['destination'];
@@ -297,10 +199,6 @@ button
 
 
 ?>
-
-
-
-
 
 
 </div>

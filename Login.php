@@ -29,10 +29,7 @@
                 padding: 0;
                 width: 100%;
                 height: 100%;
-                background-image: url(image/8.jpg);
-                background-repeat: no-repeat;
-                background-attachment: fixed;
-                background-size: cover;
+                background-color: #ddeff3;
 
             }
             .sign_up{
@@ -42,9 +39,8 @@
             }
             .sign_up:hover{
 
-                background-color: #fff;
-                
-
+                color: #000;
+                background-color: #00878E;
             }
 
      

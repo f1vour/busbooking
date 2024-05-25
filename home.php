@@ -21,81 +21,6 @@
       body{
 
              background-color: #fcfafa; 
-           /* background-image: url(image/4.jpg);
-           background-size: contain;
-          background-repeat: no-repeat;
-          background-attachment: fixed; */
-
-
-
-
-
-      /*
-                margin: 0;
-                padding: 0;
-                width: 100%;
-                height: 100%;
-                background-color: #fff;
-            }
-              #container{
-
-                height: 100vh;
-                width: 100%;
-                background-image: url(image/3.jpg);
-                background-size: cover;
-                background-position: center;
-                background-repeat: no-repeat;
-                background-attachment: fixed;
-                transition: 2s;
-                font-family: cursive;
-                animation-name: animate;
-                animation-direction: alternate-reverse;
-                animation-duration: 40s;
-                animation-fill-mode: forwards;
-                animation-iteration-count: infinite;
-                animation-play-state: running;
-                animation-timing-function: ease-in-out;
-
-
-            }
-
-            @keyframes animate{
-
-                0%{
-                    background-image: url(image/1.jpg);
-                }
-                10%{
-                    background-image: url(image/2.jpg);
-                }
-                20%{
-                    background-image: url(image/3.jpg);
-                }
-                30%{
-                    background-image: url(image/4.jpg);
-                }
-                40%{
-                    background-image: url(image/5.jpg);
-                }
-                50%{
-                    background-image: url(image/6.jpg);
-                }
-                60%{
-                    background-image: url(image/7.jpg);
-                }
-                70%{
-                    background-image: url(image/8.jpg);
-                }
-                80%{
-                    background-image: url(image/9.jpg);
-                }
-                90%{
-                    background-image: url(image/10.jpg);
-                }
-                100%{
-                    background-image: url(image/1.jpg);
-                }
-
-*/
             }
 .imageContainer{            
    width: 100%;
@@ -320,7 +245,7 @@ button{
   <div id="container">
 
 
-              <!--this is the header callling(nav bar)-->
+              <!--this is the header calling(nav bar)-->
 
             <?php include("nav.php");
              ?>
@@ -330,16 +255,7 @@ button{
              
 
                 <div class="imageContainer">
-                  <!-- <h1 class="home_details">Get Your Bus Ticket, Anytime, <br><font class="font">Anywhere..</font>
-
-                  <br>
-
-
-                       <a href="signUp.php">     <button class="btnHome">SIGN UP NOW</button></a>
-
-
-
-                  </h1> -->
+                 
                 </div>
   </div>
 

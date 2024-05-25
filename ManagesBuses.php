@@ -16,22 +16,16 @@ session_start();
 <head>
   <title>Admin Panel of Bus</title>
   <!--cdn icon library -->
-  
+  <!-- Here is for managing the buses in the Admin Dashboard -->
 	<style type="text/css">
 
 			body{
 
-		  background-image: url("image/20.jpg");
-		  background-position: center;
-		  background-size: cover;
-		  height: 700px;
-		  background-repeat: no-repeat;
-      background-attachment: fixed;
-
+		  background-color: #ddeff3;
 		}
 		.adminTopic{
 			text-align: center;
-			color: #fff;
+			color: #000;
 			
 
 		}
@@ -50,17 +44,17 @@ table
 }
 table th
 {
-    border-bottom:2px solid rgb(187, 187, 187);
+    border-bottom:2px solid #11CAF3;
     padding:10px 0px 10px 0px;
     font-family: "balsamiq_sansitalic" !important;
 }
 table tr td
 {
-    border-right: 2px solid rgb(187, 187, 187);
+    border-right: 2px solid #11CAF3;
     height: 58px;
     padding: 22px 0px 0px 0px;
     font-family: "monospace;" !important;
-    border-bottom: 2px solid rgb(187, 187, 187);
+    border-bottom: 2px solid #11CAF3;
     font-size: 20px;
 }
 table tr td a
@@ -94,7 +88,7 @@ table tr td button:hover
 }
 button 
 {
-    padding: 5px 5px 5px 5x;
+    padding: 10px;
 }
 .btnPolicy{
 
@@ -142,21 +136,6 @@ button
     <li><a href="BookingManage.php">Booking People</a></li>
     <li><a href="PaymentManage.php">Transaction</a></li>
     <li><a href="adminLogout.php">logout</a></li>
-  <!--  <li><a href="#">Event</a></li>
-    <li><a href="#">About</a></li>
-    <li><a href="#">Service</a></li>
-    <li><a href="#">Contact</a></li>-->
-    </ul>
- <!--  <li>
-      <div class="social-links">
-        <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
-        <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
-        <a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
-        <a href="#" class="google-plus"><i class="fa fa-youtube"></i></a>
-        
-      </div>
-    </li>-->
-   
 
 </div>
 
@@ -178,7 +157,6 @@ button
 
     echo "<table>";
     echo "<tr>
-      <th>ID</th>
     <th>bus_name</th>
     <th>Tel Number</th>
     <th>Update</th>
@@ -189,8 +167,6 @@ button
        while ($row=mysqli_fetch_array($sqldata,MYSQLI_ASSOC))
        {
         echo "<tr><td>";
-        echo $row['id'];
-        echo "</td><td>";
         echo $row['Bus_Name'];
         echo "</td><td>";
         echo $row['Tel'];

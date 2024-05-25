@@ -28,11 +28,12 @@ session_start();
 
 /* body  */
 body{
-  font-family: monospace;
+  background-color: #fff;
+  /* font-family: monospace;
   background-image: url(image/12.jpg);
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-size: cover;
+  background-size: cover; */
 }
 /* navigetion bar css code */
 nav{
@@ -135,14 +136,14 @@ a:nth-child(4){
   15px 15px 15px  rgba(0, 0, 0, 0.1),
   inset -5px -15px 15px  rgba(255, 255, 255, 0.2),
   inset 5px 5px 5px  rgba(0, 0, 0, 0.2);
-
+  background-color: #ddeff3;
 
 
   
 }
 .wrapper .left{
   width: 30%;
-  background:#3A5795; 
+  background:#00878E; 
   padding: 30px 25px;
   border-top-left-radius: 5px;
   border-bottom-left-radius: 5px;
@@ -158,17 +159,17 @@ a:nth-child(4){
 .right{
   width: 80%;
   left: 10%;
-  margin-top:46px;
+  margin-top:80px;
   margin-right:auto;
   margin-left:auto;
-  /*background-color: rgba(0, 0, 0, 1.0);*/
-  color: #fff;
+  /* background-color: rgba(0, 0, 0, 1.0); */
+  color: #000;
   padding: 0px 200px;
   position: relative;
   font-size: 15px;
 }
 hr{
-  border:1px solid black;
+  border:1px solid #11caf3;
   width: 50%;
   
 
@@ -190,8 +191,9 @@ hr{
   transition: .5s;}*/
 
   .btn1:hover{
-    color: rgb(235, 235, 235);
-    background-color: rgb(85, 149, 179);
+    background-color: #11caf3;
+   cursor: pointer;
+   color: #fff;
   }
 .btn2{
   margin-left: 90px;
@@ -214,8 +216,9 @@ hr{
 
 }
 .btn3:hover{
-  background-color: #1b9bff;
+  background-color: #00878E;
   cursor: pointer;
+  color: #000;
 }
 .btn4{
   background-color:#11caf3;
@@ -228,8 +231,9 @@ hr{
 
 }
 .btn4:hover{
-  background-color: #1b9bff;
+  background-color: #11caf3;
   cursor: pointer;
+  color: #000;
 }
 .data{
      width: 50%;
@@ -242,95 +246,8 @@ hr{
   padding: 30px 355px; 
   
 }
-/*.nxdiv{
-  width: 530px;
-  height: 390px;
-  margin-left: 60%;
-  margin-top:-190px;
-  /*margin-top:46px;
-  margin-right:auto;
-  margin-left: auto;*/
-  
- /* background-color:#c0c0e9;*/
-  
-  /*padding: 0px 200px;
-  position: relative;*/
-  /*font-size: 15px;
-
-}*/
-
-/*.bu,button{
-  background-color:#637BAD;*/
-  /*margin-right:5px;*/
-  /*width: 50px;
-  height: 30px;*/
-  /*font-size: 12px;
-  padding-left: 0px;
-  margin-top:10px ;
-  margin-left: 250px;
-  font-family:"arial";
-  border-radius: 7px;
-  border-style:solid ;
-  background-color:#637BAD;
-  border-width: 2px;
-  border: none;
-  color: white;*/
-
-  
-
-
-/* footer css code */
-/*.footer{
-    
-    position:fixed;
-    bottom: 0;    
-    width: 100%;
-    height: 20%;
-    background-color:#0B0B3B;
-}
-
-.container,{
-  margin-left: 25%;
-  margin-top: 7px;
-  margin-bottom: 500px;
-  width:100%;
-  height: 80px;
-  color: white;
-}
-h2{
-  margin-left: 25%;
-  margin-top: 7px;
-  margin-bottom: 500px;
-  width:100%;
-  height: 80px;
-  color: white;
-
-}
-*/
-/*
-.row{
-  display: flex;
-  flex-wrap: wrap;
-}
-
-ul{
-  list-style: none;
-}
-.footer-col{
-
-  color: white;
-  text-align: center;
-  
-
-}
-/*.footer-col1{
-  color: white;
-  text-align: center;
-
-}*/
-
 .focl{
-  background-color: #0B0B3B;
+  background-color: #00878E;
   margin-top: 100px;/*maneg footer top */
   text-align: center;
 
@@ -340,7 +257,7 @@ ul{
 }
 #imf{
   color: white;
-  border: 1px solid #ccc;
+  border: 1px solid #11caf3;
   padding-bottom: 5px ;
   padding-right: 5px ;
   padding-top: 5px;
@@ -372,13 +289,16 @@ li a{
   text-decoration: none;
 }
 li a:hover{
-  color: white;
-  background-color: white;
+  color: #11caf3;
+  background-color: #fff;
   transition: .5s;
 
 }
 .fla{
   color: white;
+}
+h3 {
+  color: #00878E;
 }
 
 
@@ -396,7 +316,7 @@ li a:hover{
   
           <!-- body part my account code -->
           
-          <div class="usern"><b><font color="#fff"> Hello !!! <?php echo $user_data['username'];?></font></b></div>
+          <div class="usern"><b><font color="#000"> Hello !!! <?php echo $user_data['username'];?></font></b></div>
             <div class="wrapper">
               <div class="left">
                   <img src="image/P2.png"alt="user" width="200">
@@ -412,7 +332,7 @@ li a:hover{
         <div class="right">
 
                   
-           <h3>Account Information</h3><hr/><br/>  
+           <h3>ACCOUNT INFORMATION</h3><hr/><br/>  
                 <p>User name:- <?php echo $user_data['username'];?>   </p><br>
                 <p>Email:- <?php echo $user_data['email'];?> </p>
                 <br>
@@ -426,18 +346,6 @@ li a:hover{
                 <button class="btn3">Logout</button></a>
                 <a href="deleteProfile.php?id=<?php echo $user_data['id'];?>">
                 <button class="btn3">Delete</button></a>
-         </div>
-          <!--
-         <div class="nxdiv">
-           <h3>Security offtion</h3>
-           <p>password:- <input type="password"></p>
-                
-
-         </div>-->
-                  
-                 
-             
-             
-            
+         </div>            
 </body>
 </html>

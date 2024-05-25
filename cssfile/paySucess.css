@@ -15,7 +15,7 @@ body{
     margin:2rem;
     width:60%;
     margin:auto;
-    background: #1ff71c21;
+    background: #ddeff3;
     border-radius: 10px;
     box-shadow:rgba(0,0,0,0.24) 0px 3px 8px;
 }
@@ -28,23 +28,23 @@ body{
     margin-right:2rem;
     width:30px;
     height:30px;
-    color:#39ff21;
+    color:#11caf3;
     font-size:50px;
     transform:translateY(-40px);
 }
 .alert h3{
 font-size:18px;
-color:#28e53f;
+color:#11caf3;
 }
 .alert-content{
     margin-top:1rem;
     margin-bottom: 2rem;
     font-size:16px;
-    color:#28e53f;
+    color:#11caf3;
 }
 .alert .button{
     color:#fff;
-    background: #1fe41c;
+    background: #11caf3;
     padding:0.5rem 1rem;
     margin-right:1rem;
     align-items: center;
@@ -58,7 +58,7 @@ color:#28e53f;
 }
 .alert .button:hover{
     color:#fff;
-    background: #21ce1e;
+    background: #11caf3;
 }
 .button i{
     font-size:17px;
@@ -68,16 +68,16 @@ color:#28e53f;
     color:#fff;
 }
 .dismiss-btn{
-    border:1px solid #1fe41c;
+    border:1px solid #11caf3;
     border-radius:10px;
     padding: 0.4rem 0.9rem;
     background: transparent;
     cursor: pointer;
-    color:#1fe41c;
+    color:#11caf3;
     box-shadow:rgba(0,0,0,0.15) 2.4px 2.4px 3.2px;
 }
 .dismiss-btn:hover{
-    background: #1fe41c;
+    background: #11caf3;
     color:#fff;
 }
 .img{

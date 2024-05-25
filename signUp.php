@@ -23,11 +23,11 @@
 
      
 body{
- 
-  background-image: url(image/8.jpg);
+  background-color: #fff;
+  /* background-image: url(image/8.jpg);
   background-attachment: fixed;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: cover; */
 
 }
 .confirm{
@@ -37,13 +37,15 @@ body{
 
 
 }
-      
-    </style>
+.error {
+  color: red;
+}
+</style>
 
   </head>
   <body>
 
-              <!--this is the header callling(nav bar)-->
+              <!--this is the header calling(nav bar)-->
 
             <?php include("nav.php");
              ?>
@@ -66,6 +68,10 @@ session_start();
     $fname = $_POST['fname'];
     $lname = $_POST['lname'];
     $email = $_POST['email'];
+    $address=$_POST['address'];
+    $city=$_POST['city'];
+    $state=$_POST['state'];
+    $zip=$_POST['zip'];
     $password = $_POST['password'];
     $con_pass=$_POST['cpassword'];
 
@@ -84,12 +90,12 @@ session_start();
 
             //save to database
             $user_id = random_num(20);
-            $query = "insert into users (user_id,First_Name,Last_Name,username,email,password) values ('$user_id','$fname','$lname','$user_name','$email','$password')";
+            $query = "insert into users (user_id,First_Name,Last_Name,username,email,address,city,state,zip_code,password) values ('$user_id','$fname','$lname','$user_name','$email','$address','$city','$state','$zip','$password')";
 
             mysqli_query($conn,$query);
 
             echo ("<script LANGUAGE='JavaScript'>
-    window.alert('Succesfully your Sign Up!!!');
+    window.alert('Sign Up Successful!!!');
     window.location.href='Login.php';
     </script>");
 
@@ -106,7 +112,35 @@ session_start();
 
       }
   }
+  
 ?>
+
+<!-- <?php
+
+$emailErr = ""; // Variable to store error message
+
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+  $email = test_input($_POST["email"]);
+
+  // Check if email is empty
+  if (empty($email)) {
+    $emailErr = "Email is required";
+  } else {
+    // Check if email is valid format
+    if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+      $emailErr = "Invalid email format";
+    }
+  }
+}
+
+function test_input($data) {
+  $data = trim($data);
+  $data = stripslashes($data);
+  $data = htmlspecialchars($data);
+  return $data;
+}
+
+?>  -->
 
 </div>
 
@@ -133,11 +167,30 @@ session_start();
         </div>
         <div class="input_wrap">
           <label for="email">Email Address</label>
-          <input type="text" id="email" name="email" placeholder="E-mail" required>
+          <input type="email" id="email" name="email" placeholder="E-mail" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" title="Please enter a valid email address"> 
+          <!-- <span class="error">* (format: example@domain.com)</span> -->
         </div>
         <div class="input_wrap">
           <label for="uname">Username</label>
           <input type="text" id="uname" name="user_name" placeholder="Username" required>
+        </div>
+        <div class="input_wrap inputBox">
+          <label for="address">Address</label>
+          <input type="text" id="address" name="address" required>         
+        </div>
+        <div class="input_wrap inputBox">
+          <label for="city">City</label>
+          <input type="text" placeholder="Lugbe" name="city" id="city" required>
+        </div>
+        <div class="flex">
+          <div class="input_wrap inputBox">
+            <label for="state">State</label>
+            <input type="text" placeholder="Abuja" name="state" id="state" required>
+          </div>
+          <div class="input_wrap inputBox">
+            <label for="zip">Zip code</label>
+            <input type="text" placeholder="123 456" name="zip" id="zip" required>
+          </div>
         </div>
         <div class="input_wrap">
           <label for="password">Password</label>
@@ -156,12 +209,6 @@ session_start();
     </form>
   </div>
 </div>
-
-
-
-
-
-
 
   </body>
 </html>

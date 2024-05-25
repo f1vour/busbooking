@@ -4,27 +4,12 @@
 
 ?>
 <?php include("connection.php")?>
-<!--
-<!DOCTYPE html>
-<html>
-<head>
-	<title>admin Panel suraksha</title>
-</head>
-<body>
-
-   <?php// echo "welcome:".  $_SESSION['id']; ?>
-   <a href="adminLogout.php"><button class="btnHome">logout</button></a>
-
-</body>
-</html>
-
--->
 
 
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Admin Panel COMFY</title>
+  <title>Admin Panel COMFY TRAVEL</title>
   <!--cdn icon library -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="cssfile/sidebar.css">
@@ -32,7 +17,7 @@
 	<style type="text/css">
 
 			body{
-
+         /* background-color: #fff; */
 		  background-image: url("image/20.jpg");
 		  background-position: center;
 		  background-size: cover;
@@ -99,21 +84,6 @@
     <li><a href="BookingManage.php">Booking People</a></li>
     <li><a href="PaymentManage.php">Transaction</a></li>
     <li><a href="adminLogout.php">logout</a></li>
-    
-  <!--  <li><a href="#">Event</a></li>
-    <li><a href="#">About</a></li>
-    <li><a href="#">Service</a></li>
-    <li><a href="#">Contact</a></li>-->
-    </ul>
- <!--  <li>
-      <div class="social-links">
-        <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
-        <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
-        <a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
-        <a href="#" class="google-plus"><i class="fa fa-youtube"></i></a>
-        
-      </div>
-    </li>-->
    
 
 </div>
